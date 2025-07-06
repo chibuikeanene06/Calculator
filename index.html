@@ -176,10 +176,17 @@
     }
 
     function playClick() {
-      if (soundToggle.checked) {
-        clickSound.currentTime = 0;
-        clickSound.play();
-      }
+  if (soundToggle.checked) {
+    clickSound.currentTime = 0;
+    clickSound.play().catch((err) => {
+      console.log("Sound play blocked:", err);
+    });
+  }
+}
+      
+        
+        
+  
     }
   </script>
 </body>
