@@ -145,7 +145,10 @@
   </div>
 
   <!-- Custom Sound -->
-  <audio id="clickSound" src="https://cdn.pixabay.com/download/audio/2022/03/16/audio_64f3eb2c7f.mp3?filename=digital-beep-123546.mp3" preload="auto"></audio>
+  <audio id="clickSound" preload="auto">
+  <source src="https://cdn.jsdelivr.net/gh/epicmaxco/vuestic-admin@master/public/audio/button-click.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
   <script>
     const display = document.getElementById('display');
